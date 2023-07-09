@@ -6,6 +6,7 @@ A simple command-line ToDoList application that allows you to manage your tasks.
 - Installation
 - Usage
 - Features
+- Deployment 
 - Acknowledgments
   
  # Project Overview
@@ -24,5 +25,7 @@ Update existing tasks with new titles or descriptions.
 Delete tasks from the task list.
 Mark tasks as complete.
 View the list of tasks with their statuses.
+# Devloyment 
+This project is deployed on netlify here is the [link](https://todolisttextbook.netlify.app/).
 # Acknowledgments
 This project was inspired by the [TodoList](https://codepen.io/MarianKoniuszko/full/ExQgBrp) , which motivated me to explore similar ideas and build upon them.
