@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  width: 70%;
+  margin: 5rem auto 0 auto;
+  box-shadow: 1rem 1rem 1rem 0.5rem gainsboro;
+}
+
+.addTask {
+  padding: 2rem;
+  background: rgb(95, 194, 246);
+  background: linear-gradient(90deg,
+      rgba(95, 194, 246, 1) 65%,
+      rgba(61, 218, 233, 1) 100%);
+  font-size: 1.5rem;
+}
+
+.addTask h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#inputTask {
+  width: 70%;
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  border: none;
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+#addBtn {
+  font-size: 1.5rem;
+  background-color: white;
+  border: none;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  width: 6rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: all 0.5s;
+}
+
+#addBtn:hover {
+  background-color: black;
+  color: white;
+}
+
+.listOfTasksSec {
+  padding: 2rem;
+}
+
+.listOfTasksSec>h1 {
+  font-size: 2rem;
+}
+
+#listEmptyAlert {
+  margin: 2rem;
+  color: gray;
+}
+
+i:hover {
+  background-color: rgb(187, 187, 187);
+}
+
+#eachEntryDiv {
+  display: flex;
+  justify-content: space-between;
+  background-color: gainsboro;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 1rem 0 1rem 0;
+}
+
+#taskText {
+  margin-left: 0.5rem;
+}
+
+.actionBtnsCon {
+  display: flex;
+}
+
+.actionBtnsCon i {
+  font-weight: bolder;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+#doneSign {
+  color: #1db954;
+}
+
+#editSign {
+  color: #3399ff;
+}
+
+#deleteSign {
+  color: red;
+}
+
+#eachEntryDivClone {
+  display: none;
+}
+
+.doneTask {
+  text-decoration: line-through;
+  color: gray;
+  transition: all 0.5s ease-in-out;
+}
+
+.editInputCon {
+  padding: 1rem;
+  display: none;
+  position: fixed;
+  width: inherit;
+  bottom: 2rem;
+  background-color: black;
+  border-radius: 1rem;
+  box-shadow: 1rem 1rem 1rem 0.2rem rgb(196, 196, 196);
+}
+
+.editInputCon>h2 {
+  margin-bottom: 1rem;
+  color: white;
+}
+
+#editInputField {
+  width: 80%;
+  height: 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.submitAndCancelBtnsDiv button {
+  width: 10rem;
+  height: 2.5rem;
+  transition: all 0.3s;
+  margin: 1rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+}
+
+.submitAndCancelBtnsDiv button:hover {
+  background-color: #3399ff !important;
+  color: white;
+  cursor: pointer;
+}
+
+.showInputCon {
+  display: block !important;
+}
+
+@media screen and (max-width:768px) {
+  html {
+    font-size: 80%;
+
+  }
+}
+
+@media screen and (max-width: 568px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  html {
+    font-size: 40%;
+  }
+}

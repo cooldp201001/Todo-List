@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Todo List</title>
+</head>
+
+<body>
+    <section class="container">
+
+        <!-- upper section -->
+        <div class="addTask">
+            <h1>TODO LIST</h1>
+
+            <div class="inputAndBtnDiv">
+                <input id="inputTask" type="text" spellcheck="false">
+                <button id="addBtn">ADD</button>
+            </div>
+
+        </div>
+
+        <!-- lower section -->
+        <div class="listOfTasksSec">
+            <h1>List Of Tasks</h1>
+
+            <!-- show this para when list is empty -->
+            <h3 id="listEmptyAlert">The list is empty.</h3>
+
+            <!-- append the tasks into this div -->
+            <div class="userListOfTask">
+            </div>
+
+            <!-- structure of the each entry -->
+            <div id="eachEntryDivClone">
+                <p id="taskText"></p>
+                <div class="actionBtnsCon">
+                    <i id="doneSign">&#10003</i>
+                    <i id="editSign">&#128393</i>
+                    <i id="deleteSign">&#10006</i>
+                </div>
+            </div>
+
+        </div>
+
+        <!--input box for updating task -->
+        <div class="editInputCon">
+            <h2>Edit Task:</h2>
+            <input id="editInputField" type="text" spellcheck="false">
+            <div class="submitAndCancelBtnsDiv">
+                <button id="submitBtn">Submit</button>
+                <button id="cancelBtn">Cancel</button>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
